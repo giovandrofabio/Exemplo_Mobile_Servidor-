@@ -1,0 +1,496 @@
+inherited fCadUsuario: TfCadUsuario
+  Caption = 'FrmLayoutBase1'
+  OnCreate = FormCreate
+  DesignerMasterStyle = 2
+  inherited lyBase: TLayout
+    inherited rctClient: TRectangle
+      object lblLogo: TLabel
+        Align = Top
+        Size.Width = 380.000000000000000000
+        Size.Height = 80.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = 'Logotipo'
+        TabOrder = 0
+      end
+      object tbCtrlMain: TksTabControl
+        Align = Top
+        TabIndex = 3
+        Position.Y = 80.000000000000000000
+        Size.Width = 380.000000000000000000
+        Size.Height = 250.000000000000000000
+        Size.PlatformDefault = False
+        object tbStep1: TksTabItem
+          Text = 'Passo1'
+          StandardIcon = Custom
+          TabIndex = 0
+          object rctStep1: TRectangle
+            Align = Client
+            Fill.Color = claBlack
+            Size.Width = 380.000000000000000000
+            Size.Height = 200.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            object lytStep1: TLayout
+              Align = Client
+              Size.Width = 380.000000000000000000
+              Size.Height = 200.000000000000000000
+              Size.PlatformDefault = False
+              TouchTargetExpansion.Bottom = 10.000000000000000000
+              TabOrder = 0
+              object lytCPF: TLayout
+                Align = Top
+                Margins.Left = 30.000000000000000000
+                Margins.Top = 30.000000000000000000
+                Margins.Right = 30.000000000000000000
+                Position.X = 30.000000000000000000
+                Position.Y = 30.000000000000000000
+                Size.Width = 320.000000000000000000
+                Size.Height = 39.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                object edtCPF: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = Client
+                  StyleLookup = 'transparentedit'
+                  TabOrder = 0
+                  TextSettings.FontColor = claWhite
+                  TextSettings.HorzAlign = Center
+                  Size.Width = 320.000000000000000000
+                  Size.Height = 29.000000000000000000
+                  Size.PlatformDefault = False
+                  TextPrompt = 'CPF'
+                  StyledSettings = [Family, Size, Style]
+                  object Line1: TLine
+                    Align = Bottom
+                    LineType = Bottom
+                    Size.Width = 320.000000000000000000
+                    Size.Height = 29.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claWhite
+                  end
+                end
+              end
+              object lytBotoes: TLayout
+                Align = Bottom
+                Margins.Bottom = 10.000000000000000000
+                Position.Y = 140.000000000000000000
+                Size.Width = 380.000000000000000000
+                Size.Height = 50.000000000000000000
+                Size.PlatformDefault = False
+                TouchTargetExpansion.Bottom = 10.000000000000000000
+                TabOrder = 1
+                object lytCancelar: TLayout
+                  Align = Left
+                  Size.Width = 145.000000000000000000
+                  Size.Height = 50.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 0
+                  object rctCancelar: TRectangle
+                    Align = Client
+                    Fill.Color = claDarkred
+                    Size.Width = 145.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Kind = None
+                    XRadius = 24.000000000000000000
+                    YRadius = 24.000000000000000000
+                    object lblCancelar: TLabel
+                      Align = Client
+                      StyledSettings = [Family, Size]
+                      Size.Width = 145.000000000000000000
+                      Size.Height = 50.000000000000000000
+                      Size.PlatformDefault = False
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.FontColor = claWhite
+                      TextSettings.HorzAlign = Center
+                      Text = 'Cancelar'
+                      TabOrder = 0
+                    end
+                  end
+                end
+                object lytStep2: TLayout
+                  Align = Right
+                  Position.X = 235.000000000000000000
+                  Size.Width = 145.000000000000000000
+                  Size.Height = 50.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 1
+                  object rctStep2: TRectangle
+                    Align = Client
+                    Fill.Color = claLightgreen
+                    Size.Width = 145.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Kind = None
+                    XRadius = 24.000000000000000000
+                    YRadius = 24.000000000000000000
+                    OnClick = rctStep2Click
+                    object lblStep2: TLabel
+                      Align = Client
+                      StyledSettings = [Family, Size]
+                      Size.Width = 145.000000000000000000
+                      Size.Height = 50.000000000000000000
+                      Size.PlatformDefault = False
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.FontColor = claDarkgreen
+                      TextSettings.HorzAlign = Center
+                      Text = 'Pr'#243'ximo'
+                      TabOrder = 0
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
+        object tbStep2: TksTabItem
+          Text = 'Passo2'
+          StandardIcon = Custom
+          TabIndex = 1
+          object Rectangle1: TRectangle
+            Align = Client
+            Fill.Color = claBlack
+            Size.Width = 380.000000000000000000
+            Size.Height = 200.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            object Layout1: TLayout
+              Align = Client
+              Size.Width = 380.000000000000000000
+              Size.Height = 200.000000000000000000
+              Size.PlatformDefault = False
+              TouchTargetExpansion.Bottom = 10.000000000000000000
+              TabOrder = 0
+              object Layout2: TLayout
+                Align = Top
+                Margins.Left = 30.000000000000000000
+                Margins.Top = 30.000000000000000000
+                Margins.Right = 30.000000000000000000
+                Position.X = 30.000000000000000000
+                Position.Y = 30.000000000000000000
+                Size.Width = 320.000000000000000000
+                Size.Height = 91.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                object Edit1: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = Top
+                  StyleLookup = 'transparentedit'
+                  TabOrder = 1
+                  TextSettings.FontColor = claWhite
+                  TextSettings.HorzAlign = Center
+                  Size.Width = 320.000000000000000000
+                  Size.Height = 29.000000000000000000
+                  Size.PlatformDefault = False
+                  TextPrompt = 'Nome Completo'
+                  StyledSettings = [Family, Size, Style]
+                  object Line2: TLine
+                    Align = Bottom
+                    LineType = Bottom
+                    Size.Width = 320.000000000000000000
+                    Size.Height = 29.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claWhite
+                  end
+                end
+                object Edit3: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = Top
+                  StyleLookup = 'transparentedit'
+                  TabOrder = 0
+                  TextSettings.FontColor = claWhite
+                  TextSettings.HorzAlign = Center
+                  Position.Y = 29.000000000000000000
+                  Size.Width = 320.000000000000000000
+                  Size.Height = 29.000000000000000000
+                  Size.PlatformDefault = False
+                  TextPrompt = 'Email'
+                  StyledSettings = [Family, Size, Style]
+                  object Line4: TLine
+                    Align = Bottom
+                    LineType = Bottom
+                    Size.Width = 320.000000000000000000
+                    Size.Height = 29.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claWhite
+                  end
+                end
+              end
+              object Layout3: TLayout
+                Align = Bottom
+                Margins.Bottom = 10.000000000000000000
+                Position.Y = 140.000000000000000000
+                Size.Width = 380.000000000000000000
+                Size.Height = 50.000000000000000000
+                Size.PlatformDefault = False
+                TouchTargetExpansion.Bottom = 10.000000000000000000
+                TabOrder = 1
+                object Layout4: TLayout
+                  Align = Left
+                  Size.Width = 145.000000000000000000
+                  Size.Height = 50.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 0
+                  object Rectangle2: TRectangle
+                    Align = Client
+                    Fill.Color = claDeepskyblue
+                    Size.Width = 145.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Kind = None
+                    XRadius = 24.000000000000000000
+                    YRadius = 24.000000000000000000
+                    object Label1: TLabel
+                      Align = Client
+                      StyledSettings = [Family, Size]
+                      Size.Width = 145.000000000000000000
+                      Size.Height = 50.000000000000000000
+                      Size.PlatformDefault = False
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.FontColor = claBlue
+                      TextSettings.HorzAlign = Center
+                      Text = 'Voltar'
+                      TabOrder = 0
+                    end
+                  end
+                end
+                object Layout5: TLayout
+                  Align = Right
+                  Position.X = 235.000000000000000000
+                  Size.Width = 145.000000000000000000
+                  Size.Height = 50.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 1
+                  object Rectangle3: TRectangle
+                    Align = Client
+                    Fill.Color = claLightgreen
+                    Size.Width = 145.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Kind = None
+                    XRadius = 24.000000000000000000
+                    YRadius = 24.000000000000000000
+                    OnClick = rctStep2Click
+                    object Label2: TLabel
+                      Align = Client
+                      StyledSettings = [Family, Size]
+                      Size.Width = 145.000000000000000000
+                      Size.Height = 50.000000000000000000
+                      Size.PlatformDefault = False
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.FontColor = claDarkgreen
+                      TextSettings.HorzAlign = Center
+                      Text = 'Pr'#243'ximo'
+                      TabOrder = 0
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
+        object tbStep3: TksTabItem
+          Text = 'Passo3'
+          StandardIcon = Custom
+          TabIndex = 2
+          object Rectangle4: TRectangle
+            Align = Client
+            Fill.Color = claBlack
+            Size.Width = 380.000000000000000000
+            Size.Height = 200.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            object Layout6: TLayout
+              Align = Client
+              Size.Width = 380.000000000000000000
+              Size.Height = 200.000000000000000000
+              Size.PlatformDefault = False
+              TouchTargetExpansion.Bottom = 10.000000000000000000
+              TabOrder = 0
+              object Layout7: TLayout
+                Align = Top
+                Margins.Left = 30.000000000000000000
+                Margins.Top = 30.000000000000000000
+                Margins.Right = 30.000000000000000000
+                Position.X = 30.000000000000000000
+                Position.Y = 30.000000000000000000
+                Size.Width = 320.000000000000000000
+                Size.Height = 91.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                object Edit2: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = Top
+                  StyleLookup = 'transparentedit'
+                  TabOrder = 2
+                  TextSettings.FontColor = claWhite
+                  TextSettings.HorzAlign = Center
+                  Size.Width = 320.000000000000000000
+                  Size.Height = 29.000000000000000000
+                  Size.PlatformDefault = False
+                  TextPrompt = 'Apelido'
+                  StyledSettings = [Family, Size, Style]
+                  object Line3: TLine
+                    Align = Bottom
+                    LineType = Bottom
+                    Size.Width = 320.000000000000000000
+                    Size.Height = 29.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claWhite
+                  end
+                end
+                object Edit4: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = Top
+                  StyleLookup = 'transparentedit'
+                  TabOrder = 1
+                  TextSettings.FontColor = claWhite
+                  TextSettings.HorzAlign = Center
+                  Position.Y = 58.000000000000000000
+                  Size.Width = 320.000000000000000000
+                  Size.Height = 29.000000000000000000
+                  Size.PlatformDefault = False
+                  TextPrompt = 'Confirma'#231#227'o de Senha'
+                  StyledSettings = [Family, Size, Style]
+                  object Line5: TLine
+                    Align = Bottom
+                    LineType = Bottom
+                    Size.Width = 320.000000000000000000
+                    Size.Height = 29.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claWhite
+                  end
+                end
+                object Edit5: TEdit
+                  Touch.InteractiveGestures = [LongTap, DoubleTap]
+                  Align = Top
+                  StyleLookup = 'transparentedit'
+                  TabOrder = 0
+                  TextSettings.FontColor = claWhite
+                  TextSettings.HorzAlign = Center
+                  Position.Y = 29.000000000000000000
+                  Size.Width = 320.000000000000000000
+                  Size.Height = 29.000000000000000000
+                  Size.PlatformDefault = False
+                  TextPrompt = 'Senha'
+                  StyledSettings = [Family, Size, Style]
+                  object Line6: TLine
+                    Align = Bottom
+                    LineType = Bottom
+                    Size.Width = 320.000000000000000000
+                    Size.Height = 29.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Color = claWhite
+                  end
+                end
+              end
+              object Layout8: TLayout
+                Align = Bottom
+                Margins.Bottom = 10.000000000000000000
+                Position.Y = 140.000000000000000000
+                Size.Width = 380.000000000000000000
+                Size.Height = 50.000000000000000000
+                Size.PlatformDefault = False
+                TouchTargetExpansion.Bottom = 10.000000000000000000
+                TabOrder = 1
+                object Layout9: TLayout
+                  Align = Left
+                  Size.Width = 145.000000000000000000
+                  Size.Height = 50.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 0
+                  object Rectangle5: TRectangle
+                    Align = Client
+                    Fill.Color = claDeepskyblue
+                    Size.Width = 145.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Kind = None
+                    XRadius = 24.000000000000000000
+                    YRadius = 24.000000000000000000
+                    object Label3: TLabel
+                      Align = Client
+                      StyledSettings = [Family, Size]
+                      Size.Width = 145.000000000000000000
+                      Size.Height = 50.000000000000000000
+                      Size.PlatformDefault = False
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.FontColor = claBlue
+                      TextSettings.HorzAlign = Center
+                      Text = 'Voltar'
+                      TabOrder = 0
+                    end
+                  end
+                end
+                object Layout10: TLayout
+                  Align = Right
+                  Position.X = 235.000000000000000000
+                  Size.Width = 145.000000000000000000
+                  Size.Height = 50.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 1
+                  object Rectangle6: TRectangle
+                    Align = Client
+                    Fill.Color = claLightgreen
+                    Size.Width = 145.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    Stroke.Kind = None
+                    XRadius = 24.000000000000000000
+                    YRadius = 24.000000000000000000
+                    OnClick = rctStep2Click
+                    object Label4: TLabel
+                      Align = Client
+                      StyledSettings = [Family, Size]
+                      Size.Width = 145.000000000000000000
+                      Size.Height = 50.000000000000000000
+                      Size.PlatformDefault = False
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
+                      TextSettings.FontColor = claDarkgreen
+                      TextSettings.HorzAlign = Center
+                      Text = 'Pr'#243'ximo'
+                      TabOrder = 0
+                    end
+                  end
+                end
+              end
+            end
+          end
+        end
+        object ksTabItem0: TksTabItem
+          Text = 'ksTabItem0'
+          StandardIcon = Custom
+          TabIndex = 3
+          object Rectangle7: TRectangle
+            Align = Client
+            Fill.Color = claWhite
+            Size.Width = 380.000000000000000000
+            Size.Height = 200.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            object Layout11: TLayout
+              Align = Client
+              Size.Width = 380.000000000000000000
+              Size.Height = 200.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object Layout12: TLayout
+                Align = Top
+                Margins.Left = 20.000000000000000000
+                Margins.Top = 40.000000000000000000
+                Margins.Right = 20.000000000000000000
+                Position.X = 20.000000000000000000
+                Position.Y = 40.000000000000000000
+                Size.Width = 340.000000000000000000
+                Size.Height = 50.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+end

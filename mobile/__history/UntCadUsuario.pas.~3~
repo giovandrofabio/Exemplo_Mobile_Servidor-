@@ -1,0 +1,55 @@
+unit UntCadUsuario;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
+  FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls,
+  UntLayoutBase, ksTabControl, FMX.Controls.Presentation, FMX.Objects,
+  FMX.Layouts, FMX.Edit;
+
+type
+  TfCadUsuario = class(TFrmLayoutBase)
+    lblLogo: TLabel;
+    tbCtrlMain: TksTabControl;
+    tbStep1: TksTabItem;
+    tbStep2: TksTabItem;
+    tbStep3: TksTabItem;
+    edtCPF: TEdit;
+    rctStep2: TRectangle;
+    lytStep1: TLayout;
+    rctStep1: TRectangle;
+    lytCPF: TLayout;
+    lytBotoes: TLayout;
+    lytCancelar: TLayout;
+    lytStep2: TLayout;
+    lblStep2: TLabel;
+    procedure FormCreate(Sender: TObject);
+    procedure rctStep2Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  fCadUsuario: TfCadUsuario;
+
+implementation
+
+{$R *.fmx}
+
+procedure TfCadUsuario.FormCreate(Sender: TObject);
+begin
+  inherited;
+   tbCtrlMain.TabPosition := TksTabBarPosition.ksTbpNone;
+   tbCtrlMain.ActiveTab   := tbStep1;
+end;
+
+procedure TfCadUsuario.rctStep2Click(Sender: TObject);
+begin
+  inherited;
+   TLibrary.MudarAba(tbCtrlMain, tbStep2);
+end;
+
+end.

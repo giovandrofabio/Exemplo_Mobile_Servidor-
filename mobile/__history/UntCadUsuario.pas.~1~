@@ -1,0 +1,31 @@
+unit UntCadUsuario;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
+  FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls,
+  UntLayoutBase, ksTabControl, FMX.Controls.Presentation, FMX.Objects,
+  FMX.Layouts;
+
+type
+  TFrmLayoutBase1 = class(TFrmLayoutBase)
+    lblLogo: TLabel;
+    tbCtrlMain: TksTabControl;
+    tbStep1: TksTabItem;
+    tbStep2: TksTabItem;
+    tbStep3: TksTabItem;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmLayoutBase1: TFrmLayoutBase1;
+
+implementation
+
+{$R *.fmx}
+
+end.

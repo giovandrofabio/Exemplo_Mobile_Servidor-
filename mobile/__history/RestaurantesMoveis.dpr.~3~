@@ -1,0 +1,16 @@
+program RestaurantesMoveis;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  UntBase in 'UntBase.pas' {FrmBase},
+  UntLayoutBase in 'UntLayoutBase.pas' {FrmLayoutBase};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TFrmBase, FrmBase);
+  Application.CreateForm(TFrmLayoutBase, FrmLayoutBase);
+  Application.Run;
+end.

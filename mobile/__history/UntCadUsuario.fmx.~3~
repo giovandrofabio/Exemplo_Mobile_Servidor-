@@ -1,0 +1,117 @@
+inherited fCadUsuario: TfCadUsuario
+  Caption = 'FrmLayoutBase1'
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  inherited lyBase: TLayout
+    inherited rctClient: TRectangle
+      object lblLogo: TLabel
+        Align = Top
+        Size.Width = 380.000000000000000000
+        Size.Height = 80.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = 'Logotipo'
+        TabOrder = 0
+      end
+      object tbCtrlMain: TksTabControl
+        Align = Top
+        TabIndex = 0
+        Position.Y = 80.000000000000000000
+        Size.Width = 380.000000000000000000
+        Size.Height = 250.000000000000000000
+        Size.PlatformDefault = False
+        object tbStep1: TksTabItem
+          Text = 'Passo1'
+          StandardIcon = Custom
+          TabIndex = 0
+          object lytStep1: TLayout
+            Align = Client
+            Size.Width = 380.000000000000000000
+            Size.Height = 200.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object rctStep1: TRectangle
+              Align = Client
+              Fill.Color = claWhite
+              Size.Width = 380.000000000000000000
+              Size.Height = 200.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+            end
+            object lytCPF: TLayout
+              Position.X = 56.000000000000000000
+              Position.Y = 16.000000000000000000
+              Size.Width = 281.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object edtCPF: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 0
+                Position.Y = 12.000000000000000000
+                Size.Width = 281.000000000000000000
+                Size.Height = 22.000000000000000000
+                Size.PlatformDefault = False
+              end
+            end
+            object lytBotoes: TLayout
+              Position.X = 8.000000000000000000
+              Position.Y = 144.000000000000000000
+              Size.Width = 369.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              object lytCancelar: TLayout
+                Position.X = 24.000000000000000000
+                Size.Width = 129.000000000000000000
+                Size.Height = 50.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+              end
+              object lytStep2: TLayout
+                Position.X = 176.000000000000000000
+                Size.Width = 161.000000000000000000
+                Size.Height = 50.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 1
+                object rctStep2: TRectangle
+                  Align = Client
+                  Fill.Color = claLightgreen
+                  Size.Width = 161.000000000000000000
+                  Size.Height = 50.000000000000000000
+                  Size.PlatformDefault = False
+                  Stroke.Kind = None
+                  XRadius = 24.000000000000000000
+                  YRadius = 24.000000000000000000
+                  OnClick = rctStep2Click
+                  object lblStep2: TLabel
+                    Align = Client
+                    StyledSettings = [Family, Size]
+                    Size.Width = 161.000000000000000000
+                    Size.Height = 50.000000000000000000
+                    Size.PlatformDefault = False
+                    TextSettings.Font.StyleExt = {00070000000000000004000000}
+                    TextSettings.FontColor = claDarkgreen
+                    TextSettings.HorzAlign = Center
+                    Text = 'Pr'#243'ximo'
+                    TabOrder = 0
+                  end
+                end
+              end
+            end
+          end
+        end
+        object tbStep2: TksTabItem
+          Text = 'Passo2'
+          StandardIcon = Custom
+          TabIndex = 1
+        end
+        object tbStep3: TksTabItem
+          Text = 'Passo3'
+          StandardIcon = Custom
+          TabIndex = 2
+        end
+      end
+    end
+  end
+end

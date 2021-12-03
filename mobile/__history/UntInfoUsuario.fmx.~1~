@@ -1,0 +1,7 @@
+inherited FrmInfoUsuario: TFrmInfoUsuario
+  Caption = 'FrmLayoutBase1'
+  DesignerMasterStyle = 0
+  inherited lyBase: TLayout
+    TabOrder = 1
+  end
+end

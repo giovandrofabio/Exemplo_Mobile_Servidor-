@@ -1,0 +1,18 @@
+unit UntLib;
+
+interface
+
+uses
+   ksTabControl;
+
+type
+   TLibrary = class
+      private
+         class var
+      public
+         class procedure MudarAba(const AKsTabCtrl : TKsTabControl; const AKsTabItem: TKsTabItem);
+   end;
+
+implementation
+
+end.

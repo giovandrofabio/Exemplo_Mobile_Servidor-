@@ -1,0 +1,15 @@
+unit UntLib;
+
+interface
+
+type
+   TLibrary = class
+      private
+         class var
+      public
+         class procedure MudarAba();
+   end;
+
+implementation
+
+end.

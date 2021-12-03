@@ -1,0 +1,20 @@
+program RestaurantesMoveis;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  UntBase in 'UntBase.pas' {FrmBase},
+  UntLayoutBase in 'UntLayoutBase.pas' {FrmLayoutBase},
+  UntInfoUsuario in 'UntInfoUsuario.pas' {FrmInfoUsuario},
+  UntPrincipal in 'UntPrincipal.pas' {FrmPrincipal},
+  UntLib in 'utils\UntLib.pas',
+  UntCadUsuario in 'UntCadUsuario.pas' {FrmLayoutBase1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TFrmPrincipal, FrmPrincipal);
+  Application.CreateForm(TFrmLayoutBase1, FrmLayoutBase1);
+  Application.Run;
+end.

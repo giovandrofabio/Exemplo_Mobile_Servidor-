@@ -1,0 +1,14 @@
+program RestaurantesMoveis;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  UntBase in 'UntBase.pas' {FrmBase};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TFrmBase, FrmBase);
+  Application.Run;
+end.
